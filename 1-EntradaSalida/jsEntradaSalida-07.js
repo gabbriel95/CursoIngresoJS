@@ -5,21 +5,27 @@ mostrar el resulto por medio de "ALERT"
 ej.: "la Resta es 750"*/ 
 function sumar()
 {	
+	var suma;
 	alert("ok");	
 }
 
 function restar()
 {
+	var resta;
 	
 }
 
 function multiplicar()
 { 
-	
+	var multiplica;
 }
 
 function dividir()
 {
-	
+	var dividr;
 }
 
+function resultado()
+{
+	var resultado;
+}
