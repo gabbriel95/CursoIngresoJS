@@ -5,27 +5,69 @@ mostrar el resulto por medio de "ALERT"
 ej.: "la Resta es 750"*/ 
 function sumar()
 {	
-	var suma;
-	alert("ok");	
+	var NumeroUno;
+	var NumeroDos;
+	var Resultado;
+
+	NumeroUno = txtIdNumeroUno.value;
+	NumeroDos = txtIdNumeroDos.value;
+
+	NumeroUno=parseInt(NumeroUno);
+	NumeroDos=parseInt(NumeroDos);
+
+	Resultado = NumeroUno + NumeroDos;
+	
+	alert("La suma entre " + NumeroUno + " y " + NumeroDos + " es " + Resultado);	
 }
 
 function restar()
 {
-	var resta;
+	var NumeroUno;
+	var NumeroDos;
+	var Resultado;
+
+	NumeroUno = txtIdNumeroUno.value;
+	NumeroDos = txtIdNumeroDos.value;
+
+	NumeroUno=parseInt(NumeroUno);
+	NumeroDos=parseInt(NumeroDos);
+
+	Resultado = NumeroUno - NumeroDos;
+	
+	alert("La resta entre " + NumeroUno + " y " + NumeroDos + " es " + Resultado);
 	
 }
 
 function multiplicar()
 { 
-	var multiplica;
+	var NumeroUno;
+	var NumeroDos;
+	var Resultado;
+
+	NumeroUno = txtIdNumeroUno.value;
+	NumeroDos = txtIdNumeroDos.value;
+
+	NumeroUno=parseInt(NumeroUno);
+	NumeroDos=parseInt(NumeroDos);
+
+	Resultado = NumeroUno * NumeroDos;
+	
+	alert("La multiplicación entre " + NumeroUno + " y " + NumeroDos + " es " + Resultado);
 }
 
 function dividir()
 {
-	var dividr;
-}
+	var NumeroUno;
+	var NumeroDos;
+	var Resultado;
 
-function resultado()
-{
-	var resultado;
+	NumeroUno = txtIdNumeroUno.value;
+	NumeroDos = txtIdNumeroDos.value;
+
+	NumeroUno=parseInt(NumeroUno);
+	NumeroDos=parseInt(NumeroDos);
+
+	Resultado = NumeroUno / NumeroDos;
+	
+	alert("La división entre " + NumeroUno + " y " + NumeroDos + " es " + Resultado);
 }

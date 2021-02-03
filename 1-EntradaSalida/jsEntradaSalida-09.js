@@ -5,6 +5,23 @@ mostrar el importe con un aumento del 10 %
 en el cuadro de texto "RESULTADO".*/
 function mostrarAumento()
 {
+	var sueldo;
+	var aumento;
+	var resultado;
+	var sueldoInt;
 
-	alert("ok");
+	sueldo=txtIdSueldo.value;
+	sueldoInt = parseInt(sueldo);
+
+	aumento= 10*sueldoInt / 100;  //Aca esta el error con numeros enteros me sale, pero con coma no
+	
+
+	resultado = sueldoInt+aumento;
+	
+
+	txtIdResultado.value = resultado;
+
+
+
+
 }
