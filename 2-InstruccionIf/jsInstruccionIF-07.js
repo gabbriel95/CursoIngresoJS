@@ -1,8 +1,11 @@
 function mostrar()
 {
-	//tomo la edad  
-	alert("ok");
+	var edad;
+	var estadoCivil;
+	edad=parseInt(document.getElementById("txtIdEdad").value);
+	estadoCivil=document.getElementById("estadoCivil").value;
+
 	
 
 
-}//FIN DE LA FUNCIÓN
+}

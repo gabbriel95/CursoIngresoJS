@@ -13,7 +13,7 @@ function mostrarAumento()
 	sueldo=txtIdSueldo.value;
 	sueldoInt = parseInt(sueldo);
 
-	aumento= 10*sueldoInt / 100;  //Aca esta el error con numeros enteros me sale, pero con coma no
+	aumento= 10*sueldoInt / 100;
 	
 
 	resultado = sueldoInt+aumento;
