@@ -31,25 +31,18 @@ function Promedio ()
     var precioProductoUno;
     var precioProductoDos;
     var precioProductoTres;
-    var precioProductoUnoInt;
-    var precioProductoDosInt;
-    var precioProductoTresInt;
-    var costePromedio;
+    var suma;
+    var promedio;
 
-    precioProductoUno=txtIdPrecioUno.value;
-    precioProductoDos=txtIdPrecioDos.value;
-    precioProductoTres=txtIdPrecioTres.value;
+    precioProductoUno=parseFloat(document.getElementById("txtIdPrecioUno").value);
+    precioProductoDos=parseFloat(document.getElementById("txtIdPrecioDos").value);
+    precioProductoTres=parseFloat(document.getElementById("txtIdPrecioTres").value);
 
-    precioProductoUnoInt=parseInt(precioProductoUno);
-    precioProductoDosInt=parseInt(precioProductoDos);
-    precioProductoTresInt=parseInt(precioProductoTres);
+    suma= precioProductoUno+precioProductoDos+precioProductoTres;
+    promedio=suma/3;
+    promedio=promedio.toFixed(2);
 
-    costePromedio=precioProductoUnoInt/3+precioProductoDosInt/3+precioProductoTresInt/3;
-
-    alert("El coste promedio de sus productos es " + costePromedio + " $");
-
-
-
+    alert("El coste promedio de sus productos es " + promedio + " $");
 
 	
 }

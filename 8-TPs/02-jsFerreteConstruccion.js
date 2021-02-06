@@ -27,13 +27,14 @@ function Circulo ()
     var diametroDelTerreno;
     var perimetroDelTerreno;
     var alambreAComprar;
-    var pi = Math.PI; 
+    const pi = Math.PI; 
     
 
     radioDelTerreno = parseFloat (document.getElementById("txtIdRadio").value);
     diametroDelTerreno = radioDelTerreno*2;
     perimetroDelTerreno = pi*diametroDelTerreno;
     alambreAComprar = perimetroDelTerreno*3;
+    alambreAComprar = alambreAComprar.toFixed(2)
     
     alert("Usted debe comprar " + alambreAComprar + " metros de alambre");
 
