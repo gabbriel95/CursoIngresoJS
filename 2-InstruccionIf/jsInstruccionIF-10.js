@@ -1,6 +1,6 @@
 function mostrar()
 {
-	var maximo=11;
+	var maximo=10;
 	var minimo=1;
 	var nota;
 
