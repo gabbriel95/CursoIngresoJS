@@ -75,13 +75,11 @@ function mostrar()
 		case "23":
 			alert("Es de noche");
 			break;
-		case "24":
-			alert("Es de noche");
+		default:
+			alert("No es una hora valida");
 			break;
+		
 	}
 
-	if(hora>24){
-		alert("Esta hora no existe");
-	}
 
 }
