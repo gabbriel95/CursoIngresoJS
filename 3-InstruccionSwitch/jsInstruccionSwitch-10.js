@@ -2,6 +2,9 @@ function mostrar()
 {
 	var estacion;
 	var destino;
+	const siViaja="Se viaja";
+	const noViaja="No se viaja";
+
 
 	estacion=document.getElementById("txtIdEstacion").value;
 	destino=document.getElementById("txtIdDestino").value;
@@ -9,7 +12,7 @@ function mostrar()
 	switch(estacion){
 		case "Invierno":
 			if(destino=="Bariloche"){
-				alert("Se viaja");
+				alert(siViaja);
 			} else{
 				alert("No se viaja");
 			}
