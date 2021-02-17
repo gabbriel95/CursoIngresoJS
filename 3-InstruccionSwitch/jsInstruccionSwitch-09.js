@@ -19,10 +19,6 @@ function mostrar()
 				alert(TARIFA_BASE*0.8);
 			}	
 		break;
-		
-	}
-
-	switch(estacionIngresada){
 		case "Verano":
 			if(destinoIngresado=="Bariloche"){
 				alert(TARIFA_BASE*0.8);
@@ -33,11 +29,7 @@ function mostrar()
 			}else{
 				alert(TARIFA_BASE*1.2);
 			}	
-		break;
-		
-	}
-
-	switch(estacionIngresada){
+		break;		
 		case "Primavera":
 			if(destinoIngresado=="Bariloche"){
 				alert(TARIFA_BASE*1.1);
@@ -48,11 +40,7 @@ function mostrar()
 			}else{
 				alert(TARIFA_BASE*1.1);
 			}	
-		break;
-		
-	}
-
-	switch(estacionIngresada){
+		break;		
 		case "Otoño":
 			if(destinoIngresado=="Bariloche"){
 				alert(TARIFA_BASE*1.1);

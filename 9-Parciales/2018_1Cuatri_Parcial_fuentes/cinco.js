@@ -4,18 +4,18 @@ function mostrar()
 
     planeta=prompt("Ingrese un planeta del Sistema Solar");
     switch(planeta){
-        case "Mercurio":
-        case "Venus":
+        case "mercurio":
+        case "venus":
             alert("Aca hace calor");
                 break;
-        case "Tierra":
+        case "tierra":
             alert("Aca vivimos");
                 break;
-        case "Marte":
-        case "Jupiter":
-        case "Saturno":
-        case "Urano":
-        case "Neptuno":
+        case "marte":
+        case "jupiter":
+        case "saturno":
+        case "urano":
+        case "neptuno":
             alert("Aca hace frio");
                 break;
         default:

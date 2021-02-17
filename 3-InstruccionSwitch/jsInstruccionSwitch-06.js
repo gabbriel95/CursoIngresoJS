@@ -2,6 +2,7 @@ function mostrar()
 {
 	var hora;
 	hora=document.getElementById("txtIdHora").value;
+
 	switch(hora){
 		case "0":
 			alert("Es de noche");
