@@ -1,23 +1,14 @@
 function mostrar()
 {
 
-	var miArray = new Array();
+	var miArray=[23,12,42,1,23,42,142,4123,3123,412]
 
-	miArray[0]=5;
-	miArray[1]=74;
-	miArray[2]=8;
-	miArray[3]=94;
-	miArray[4]=5;
-	miArray[5]=0;
-	miArray[6]=80;
-	miArray[7]=789;
-	miArray[8]=5;
-	miArray[9]=7;
-
-document.write("El contenido del vector es: <br>");
+	
+console.log("El contenido del vector es: "+miArray);
 
 	for(var i=0; i<10; i++)
 	{
+		console.log("El contenido del vector es: "+miArray);
 
 		document.write("Posicion "+i+"-->"+miArray[i]+"<br>");
 	}

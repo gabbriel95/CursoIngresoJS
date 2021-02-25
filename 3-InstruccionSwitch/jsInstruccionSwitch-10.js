@@ -11,36 +11,52 @@ function mostrar()
 
 	switch(estacion){
 		case "Invierno":
-			if(destino=="Bariloche"){
-				alert(siViaja);
-			} else{
-				alert("No se viaja");
+			switch(destino){
+				case "Bariloche":
+					alert("Se viaja");
+				break;
+				default:
+					alert("No se viaja");
+				break;
 			}
 		break;
-
+		
 		case "Verano":
-			if(destino=="Mar del plata"){
-				alert("Se viaja");
-			} else if(destino=="Cataratas"){
-				alert("Se viaja");
-			} else{
-				alert("No se viaja");
+			switch(destino){
+				case "Mar del plata":
+				case "Cataratas":
+					alert("Se viaja");
+				break;
+				case "Cordoba":
+				case "Bariloche":
+					alert("No se viaja");
+				break;
 			}
 		break;
 
 		case "Otoño":
-			if(destino){
-				alert("Se viaja");
+			switch(destino){
+				case "Mar del plata":
+				case "Cataratas":
+				case "Cordoba":
+				case "Bariloche":
+					alert("Se viaja");
+				break;
 			}
-		break;	
+		break;
 
 		case "Primavera":
-			if(destino=="Bariloche"){
-				alert("No se viaja");
-			} else{
-				alert("Se viaja");
+			switch(destino){
+				case "Mar del plata":
+				case "Cataratas":
+				case "Cordoba":
+					alert("Se viaja");
+				break;
+				case "Bariloche":
+					alert("No se viaja");
+				break;
 			}
-		break	
+		break;
 	}
 
 
@@ -51,3 +67,5 @@ function mostrar()
 
 
 }
+
+

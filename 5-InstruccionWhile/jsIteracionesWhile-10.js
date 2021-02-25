@@ -13,17 +13,61 @@ hasta que el usuario quiera, mostrar:
 function mostrar()
 {
 	//declarar contadores y variables 
-	var respuesta;
-	var numeroIngresado;
-	var sumaNegativos=0;
+	var respuesta;//b
+	var numeros;//b
+	var acumuladorPositivos=0;//b
+	var acumuladorNegativos=0;//b
+	var contadorPositivos=0;//b
+	var contadorNegativos=0;//b
+	var contadorCeros=0;//b
+	var contadorPares=0;//b
+	var promedioPositivos=0;//b
+	var promedioNegativos=0;//b
+	var diferencia;//b
 
-	respuesta="si";
+	do{
+		numeros=parseInt(prompt("Ingrese un numero"));
 
-	while(respuesta=="si")
-	{
-		
-		respuesta=prompt("desea continuar?");
-	}//fin del while
+		if(numeros<0){
+			acumuladorNegativos=acumuladorNegativos+numeros;
+			contadorNegativos++;
+		}
+		else if(numeros>0){
+			acumuladorPositivos=acumuladorPositivos+numeros;
+			contadorPositivos++;
+		}
+		else{
+			contadorCeros++;
+		}
 
-	document.write("la suma de negativos es :"+sumaNegativos);
-}//FIN DE LA FUNCIÓN
+		if(numeros % 2 == 0){
+			contadorPares++;
+		}
+
+		respuesta=confirm("Quiere ingresar otro numero?");
+	}while(respuesta);
+
+	if(contadorPositivos>0){  
+	promedioPositivos = acumuladorPositivos / contadorPositivos;
+	}
+	if(contadorNegativos>0){  
+	promedioNegativos = acumuladorNegativos / contadorNegativos;
+    }
+
+
+	diferencia = contadorPositivos - contadorNegativos;
+
+
+	console.log("El acumulado de los negativos es " + acumuladorNegativos);//
+	console.log("El acumulado de los positivos es " + acumuladorPositivos);//
+	console.log("La cantidad de numeros positivos ingresados es " + contadorPositivos);//
+	console.log("La cantidad de numeros negativos ingresados es " + contadorNegativos);//
+	console.log("La cantidad de ceros ingresados es " + contadorCeros);//
+	console.log("La cantidad de numeros pares ingresados es " + contadorPares);//
+	console.log("El promedio de los numeros positivos es "+ promedioPositivos);
+	console.log("El promedio de los numeros negativos es "+ promedioNegativos);
+	console.log("La diferencia entre positivos y negativos es " + diferencia);
+
+}
+
+
